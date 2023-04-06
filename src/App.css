@@ -1,4 +1,5 @@
 body {
+  margin-top: 3px;
   justify-content: center;
   align-items: center;
   background: #222;
@@ -13,7 +14,7 @@ body {
 }
 
 .game button {
-  padding: 8px 12px;
+  padding: 8px 49px;
   margin: 25px;
   background: transparent;
   border: 2px solid #eee;
@@ -23,12 +24,14 @@ body {
   transition: 0.2s;
   font-weight: bold;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 2rem;
 }
 
-.game h2 {
+.game h1 {
   font-weight: 600;
   color: #fff;
+  font-size: 5rem;
+  margin-bottom: 1px;
 }
 
 .board {
