@@ -22,7 +22,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(-45deg);
-            background: #62fffc;
+            background: #0eaca9;
             border-radius: 5px;
         }
 
@@ -32,7 +32,7 @@
         }
 
         &.O {
-            border-color: #ffa02e;
+            border-color: #ff2e3f;
         }
     }
 }
@@ -41,6 +41,15 @@
     .square{
         width: 200px;
         height: 200px;
+        span{
+            &.X::before {
+                border: 6px solid transparent;
+            }
+            &.X::after {
+                border: 6px solid transparent;
+            }
+            border: 16px solid transparent;
+        }
     }
 }
   

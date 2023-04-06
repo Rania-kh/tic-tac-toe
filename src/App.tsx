@@ -14,10 +14,9 @@ function App() {
     setPlayer(CELL.X);
     setWinner(CELL.EMPTY);
   }
+
+  // function to implement the minimax algorithm and calculate the best result for the O player
   const handleClickCell = (index: number) => {
-    console.log(index)
-    console.log('winner || cells[index]')
-    console.log(winner || cells[index])
     if (winner || cells[index]) return
 
     const newCells = [...cells]

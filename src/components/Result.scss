@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color: rgba(0, 0, 0, 0.911);
   }
   
   .result-message {
@@ -20,11 +20,12 @@
     color: #fff;
   }
 
+
+  // Firework  styles
   $particles: 200;
   $width: 700;
   $height: 700;
   
-  // Create the explosion...
   $box-shadow: ();
   $box-shadow2: ();
   @for $i from 0 through $particles {
@@ -144,6 +145,7 @@
     }
   }
 
+  // Sad face  styles
 
   .container{
     margin: auto;

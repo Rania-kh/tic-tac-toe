@@ -23,12 +23,14 @@ export const Result: FC<ResultProps> = ({ winner, resetGame }) => {
             {winner === CELL.X ? (
                 <div className="pyro">
                     <div className="result-message">{message}</div>
+                    {/* the Explsion Animation */}
                     <div className="before"></div>
                     <div className="after"></div>
                 </div>
             ) : winner === CELL.O ? (
                 <div>
                     <div className="result-message">{message}</div>
+                    {/* the sad face animation */}
                     <div className='container'>
                         <div className='tear'></div>
                         <div className='tear2'></div>
