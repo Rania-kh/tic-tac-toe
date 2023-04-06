@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { GameBoard } from './components';
+import { Button, GameBoard } from './components';
 import { CELL } from './configs/enums';
 import { checkWinner, getBestMove } from './utils';
 
@@ -9,6 +9,11 @@ function App() {
   const [player, setPlayer] = useState<CELL>(CELL.X);
   const [winner, setWinner] = useState<string>(CELL.EMPTY);
 
+  const resetGame = () => {
+    setCells(Array(9).fill(CELL.EMPTY));
+    setPlayer(CELL.X);
+    setWinner(CELL.EMPTY);
+  }
   const handleClickCell = (index: number) => {
     console.log(index)
     console.log('winner || cells[index]')
@@ -42,8 +47,9 @@ function App() {
   }
 
   return (
-    <div className='tic-tac-toe'>
-      <h1 className='title'> TIC-TAC-TOE </h1>
+    <div className='game'>
+      <h2> TIC-TAC-TOE </h2>
+      <Button onClick={resetGame} title='Reset Game' />
       <GameBoard cells={cells} handleClickCell={handleClickCell} />
     </div>
   );

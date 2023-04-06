@@ -6,13 +6,27 @@ body {
   box-sizing: border-box;
 }
 
-.tic-tac-toe {
+.game {
   width: fit-content;
   margin: 40px auto;
   text-align: center;
 }
 
-.title {
+.game button {
+  padding: 8px 12px;
+  margin: 25px;
+  background: transparent;
+  border: 2px solid #eee;
+  color: #eee;
+  max-width: 400px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.game h2 {
   font-weight: 600;
   color: #fff;
 }

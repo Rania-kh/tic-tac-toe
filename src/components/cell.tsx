@@ -8,21 +8,19 @@ interface CellProps {
     index: number
     onClick: () => void
 }
-export const Cell: FC<CellProps> = ({ value, index, onClick }) => {
-    return (
-        <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            className="square"
-            onClick={onClick}
-        >
-            {value && (
-                <motion.span
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    className={value}
-                ></motion.span>
-            )}
-        </motion.div>
-    )
-}
+export const Cell: FC<CellProps> = ({ value, index, onClick }) => (
+    <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        className="square"
+        onClick={onClick}
+    >
+        {value && (
+            <motion.span
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                className={value}
+            ></motion.span>
+        )}
+    </motion.div>
+)

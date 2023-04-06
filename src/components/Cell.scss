@@ -37,14 +37,10 @@
     }
 }
 
-
-.single-cell {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #eee;
-    border-radius: 5px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-  }
+@media (min-width: 768px) {
+    .square{
+        width: 200px;
+        height: 200px;
+    }
+}
   
