@@ -1,16 +1,28 @@
 import { FC } from "react";
 import { CELL } from "../configs/enums";
+import { motion } from "framer-motion";
+import "./Cell.scss";
 
 interface CellProps {
     value: CELL
     index: number
-    onClick: (index: number) => void
+    onClick: () => void
 }
 export const Cell: FC<CellProps> = ({ value, index, onClick }) => {
-    const handleClickCellAction = () => onClick(index)
     return (
-        <div className="single-cell" onClick={handleClickCellAction}>
-            {value}
-        </div>
+        <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            className="square"
+            onClick={onClick}
+        >
+            {value && (
+                <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className={value}
+                ></motion.span>
+            )}
+        </motion.div>
     )
 }

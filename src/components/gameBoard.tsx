@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { CELL } from "../configs/enums"
-import { Cell } from "./cell"
+import { Cell } from "./Cell"
 
 interface GameBoardProps {
     cells: CELL[]
@@ -8,9 +8,10 @@ interface GameBoardProps {
 }
 export const GameBoard: FC<GameBoardProps> = ({ cells, handleClickCell }) => {
     return (
-
         <div className='board'>
-            {cells.map((cell, index) => <Cell value={cell} index={index} onClick={handleClickCell} />)}
+            {cells.map((cell, index) => (
+                <Cell key={index} value={cell} index={index} onClick={() => handleClickCell(index)} />
+            ))}
         </div>
     )
 }

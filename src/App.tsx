@@ -10,12 +10,16 @@ function App() {
   const [winner, setWinner] = useState<string>(CELL.EMPTY);
 
   const handleClickCell = (index: number) => {
+    console.log(index)
+    console.log('winner || cells[index]')
+    console.log(winner || cells[index])
     if (winner || cells[index]) return
 
     const newCells = [...cells]
     newCells[index] = player
     setCells(newCells)
-
+    console.log('newCells')
+    console.log(newCells)
     const newWinner = checkWinner(newCells)
     if (newWinner) {
       setWinner(newWinner)

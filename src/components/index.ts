@@ -1,2 +1,2 @@
-export * from './cell'
-export * from './gameBoard'
+export * from './Cell'
+export * from './GameBoard'

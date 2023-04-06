@@ -29,13 +29,3 @@ body {
   max-width: 500px;
   background-color: #222;
 }
-
-.single-cell {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #eee;
-  border-radius: 5px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
