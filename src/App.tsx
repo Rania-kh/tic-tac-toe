@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
+import { CELL } from './configs/enums';
 
 function App() {
-  const [cells, setCells] = useState(Array(9).fill(''));
-  const [player, setPlayer] = useState('X');
-  const [winner, setWinner] = useState('');
+  const [cells, setCells] = useState<CELL[]>(Array(9).fill(CELL.EMPTY));
+  const [player, setPlayer] = useState<CELL>(CELL.X);
+  const [winner, setWinner] = useState<CELL>(CELL.EMPTY);
 
   return (
     <div className='tic-tac-toe'>
