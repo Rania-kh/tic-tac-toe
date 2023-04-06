@@ -3,7 +3,7 @@
 
 <img alt="typescript" align="left" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
 <img alt="React" align="left" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-
+<br /><br />
 
 ## Introduction
 This is a Tic Tac Toe game web app built with React.js, TypeScript, CSS, Framer Motion, and Sass.
