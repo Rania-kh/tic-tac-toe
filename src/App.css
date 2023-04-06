@@ -16,3 +16,25 @@ body {
   font-weight: 600;
   color: #fff;
 }
+
+.board {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  margin: auto;
+  max-width: 500px;
+  background-color: #222;
+}
+
+.single-cell {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}

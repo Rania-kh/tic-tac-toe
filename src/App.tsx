@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -10,6 +9,12 @@ function App() {
   return (
     <div className='tic-tac-toe'>
       <h1 className='title'> TIC-TAC-TOE </h1>
+      <div className='board'>
+        {cells.map((cell, index) => (
+          <div className="single-cell">
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
