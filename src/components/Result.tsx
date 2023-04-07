@@ -13,9 +13,9 @@ export const Result: FC<ResultProps> = ({ winner, resetGame }) => {
     if (winner === 'tie') {
         message = 'It\'s a tie!';
     } else if (winner === CELL.O) {
-        message = `AI wins!`;
+        message = `AI Won!`;
     } else if (winner === CELL.X) {
-        message = `YOU win!`;
+        message = `YOU Won!`;
     }
 
     return (
@@ -29,7 +29,6 @@ export const Result: FC<ResultProps> = ({ winner, resetGame }) => {
                 </div>
             ) : winner === CELL.O ? (
                 <div>
-                    <div className="result-message">{message}</div>
                     {/* the sad face animation */}
                     <div className='container'>
                         <div className='tear'></div>
@@ -42,11 +41,14 @@ export const Result: FC<ResultProps> = ({ winner, resetGame }) => {
                             <div className='mouth'></div>
                         </div>
                     </div>
+                    <div className="result-message">{message}</div>
                 </div>
             ) : (
                 <div className="result-message">{message}</div>
             )}
-            <Button onClick={resetGame} title='Start New Game' />
+            <div className="result-button">
+                <Button onClick={resetGame} title='Start New Game' />
+            </div>
         </div>
     );
 };

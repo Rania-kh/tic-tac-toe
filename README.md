@@ -1,8 +1,10 @@
 # Tic Tac Toe
 
 
-<img alt="typescript" align="left" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
-<img alt="React" align="left" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+<img alt="React" align="left" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" style="margin-right: 0.6em;"/>
+<img alt="typescript" align="left" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" style="margin-right: 0.6em;"/> 
+<img alt="sass" align="left" src="https://img.shields.io/badge/sass-%2320232a.svg?style=for-the-badge&logo=sass&logoColor=purple" style="margin-right: 0.6em;"/> 
+<img alt="framer motion" align="left" src="https://img.shields.io/badge/framer_motion-%23007ACC.svg?style=for-the-badge&logo=framer&logoColor=white" style="margin-right: 0.6em;"/> 
 <br /><br />
 
 ## Introduction
